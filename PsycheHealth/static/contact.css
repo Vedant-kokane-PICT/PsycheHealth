@@ -1,0 +1,38 @@
+body{
+  background-repeat: no-repeat;
+  /**/
+  background-image: url('background2.png');
+  background-size: cover;
+}
+.person1 {
+  margin-left: 450px;
+  /* border:thin;
+  border-color: black; */
+
+}
+.person2{
+  
+  margin-left: 450px;
+  /* border:thin;
+  border-color: #FFFFF7;
+  opacity: 0.5; */
+}
+.person3{
+  margin-left: 450px;
+
+  /* border:thin;
+  border-color: #FFFFF7;
+  opacity: 0.5; */
+}
+.person{
+
+
+}
+h4{
+  border: solid black;
+  margin-right: 325px;
+  padding:10px 10px 10px 40px;
+  border-color: #FFFFF7;
+
+  color:FFFFF7;
+}

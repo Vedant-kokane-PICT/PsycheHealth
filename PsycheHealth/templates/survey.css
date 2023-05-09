@@ -1,0 +1,18 @@
+body{
+  background-repeat: no-repeat;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );  
+  background-size: cover;
+}
+.bg {
+  padding: 40px;
+  border: solid;
+  margin: 50px 200px 50px 300px;
+  background-color:#FFFFF7 ;
+  /* background: transparent; */
+  border-color: white;
+  opacity: 0.5;
+
+}
+.g{
+  padding: 20px;
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<a class="navbar-brand"
+	style="color:#262D64 ;"></a>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="dist/pattern.min.css" rel="stylesheet">
+		<link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm” crossorigin=”anonymous”>	<title>
+		Mental health survey
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+			
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			align-content: center;
+			
+			
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #FFFFF7;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body >
+    
+	<h1 style="color: ;#FFFFF7">Mental health Survey Form</h1>
+
+	<!-- Create Form -->
+	<form id="form" action="/predict" method="POST" class="pattern-checks-sm bg-blue white">
+
+        <!---1. question-->
+		<div class="form-control" >
+			<label for="education" id="education">
+				What’s your Education level ?
+			</label>
+			<!-- Dropdown options -->
+			<select name="education" id="education">
+				<option value=0>Currently pursuing highSchool</option>
+				<option value=1>Completed highschool</option>
+				<option value=2>Currently pursuing undergraduate
+                </option>
+				<option value=3 >Completed Undergraduate
+                </option>
+                <option value=4>Currently pursuing masters</option>
+				<option value=5>Completed masters</option>
+				<option value=6>Currently pursuing PHD
+                </option>
+				<option value=7 >Completed PHD
+                </option>
+			</select>
+		</div>
+        
+        <!---2. question-->
+		<div class="form-control">
+			<label>
+
+				Have you noticed a decrease in your ability to concentrate and focus on tasks you need to complete, such as difficulty staying on task, becoming easily distracted, or struggling to remember information you need to recall?			</label>
+			<!-- Input Type Radio Button -->
+			<select name="concentration" id="concentration">
+                <option value=1>Yes</option>
+				<option value=0>No</option>
+            </select>
+		</div>
+
+        <!---3. question-->
+		<div class="form-control">
+			<label>
+                Are you currently experiencing symptoms of anxiety, such as excessive worrying, restlessness, irritability, difficulty concentrating, or physical symptoms like rapid heartbeat or sweating?
+			</label>
+			<!-- Input Type Radio Button -->
+			<select name="Anxious" id="Anxious">
+                <option value=1>Yes</option>
+				<option value=0>No</option>
+            </select>
+		</div>
+
+        <!---4. question-->
+        <div class="form-control">
+			<label>
+                Are you currently experiencing symptoms of depression, such as persistent sadness, hopelessness, loss of interest in activities, changes in appetite or sleep patterns, or feelings of worthlessness or guilt?
+			</label>
+			<!-- Input Type Radio Button -->
+			<select name="depressed" id="depressed">
+                <option value=1>Yes</option>
+				<option value=0>No</option>
+            </select>
+		</div>
+
+        <!---5. question-->
+        <div class="form-control">
+			<label>
+				Are you experiencing an increase in overthinking, where your mind becomes preoccupied with repetitive or obsessive thoughts, making it difficult to concentrate on tasks or enjoy activities, and causing distress or anxiety?
+			</label>
+			<!-- Input Type Radio Button -->
+			<select name="overthink" id="overthink">
+                <option value=1>Yes</option>
+				<option value=0>No</option>
+            </select>
+		</div>
+
+        <!---6. question-->
+        <div class="form-control">
+			<label>
+                Have you noticed frequent changes in your mood, such as feeling happy one moment and then feeling sad, irritable, or anxious shortly after, without any apparent reason for the mood shift?
+			</label>
+			<!-- Input Type Radio Button -->
+			<select name="mood" id="mood">
+                <option value=1>Yes</option>
+				<option value=0>No</option>
+            </select>
+		</div>
+
+
+        <!---7. question-->
+        <div class="form-control">
+			<label>
+               
+Are you experiencing symptoms of panic, such as sudden and intense feelings of fear or dread, physical sensations like a racing heartbeat, sweating, or difficulty breathing, or a sense of losing control?
+			</label>
+			<!-- Input Type Radio Button -->
+			<select name="panic" id="panic">
+                <option value=1>Yes</option>
+				<option value=0>No</option>
+            </select>
+		</div>
+
+        <!---8. question-->
+        <div class="form-control">
+			<label>
+				Have you noticed yourself engaging in repetitive behaviors, such as checking and rechecking things, counting, or cleaning excessively, that you feel compelled to do, even if they don't make logical sense, and that are interfering with your daily life?			</label>
+			<!-- Input Type Radio Button -->
+			<select name="compulsive" id="compulsive">
+                <option value=1>Yes</option>
+				<option value=0>No</option>
+            </select>
+		</div>
+
+        <!---9. question-->
+        <div class="form-control">
+			<label>
+                
+Do you experience fatigue or a lack of energy when starting a task, even if it's something you enjoy, that makes it difficult to get started or complete the task, and that may be accompanied by physical symptoms like muscle aches or headaches?
+			</label>
+			<!-- Input Type Radio Button -->
+			<select name="tired" id="tired">
+                <option value=1>Yes</option>
+				<option value=0>No</option>
+            </select>
+		</div>
+
+        <!---10. question-->
+        <div class="form-control">
+			<label for="age" id="age">
+				What’s Age group ?
+			</label>
+			<!-- Dropdown options -->
+			<select name="age" id="age">
+				<option value=0>18-29 years</option>
+				<option value=1>30-44 years</option>
+				<option value=2>45-60 years</option>
+				<option value=3 > Greater than 60 years</option>
+			</select>
+		</div>
+
+        <!---11. question-->
+        <div class="form-control">
+			<label>
+                What’s your gender?
+			</label>
+			<!-- Input Type Radio Button -->
+			<select name="gender" id="gender">
+                <option value=1>Male</option>
+				<option value=0>Female</option>
+            </select>
+		</div>
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit
+		</button>
+	</form>
+
+    <h1>{{result}}</h1>
+</body>
+
+</html>

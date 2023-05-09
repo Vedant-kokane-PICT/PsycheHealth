@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{url_for('.static', filename='blogs.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <title>Blogs</title>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#" style="color:#262D64">PsycheHealth</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+
+
+        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+    </div>
+    <form class="form-inline">
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+
+    </form>
+  </div>  <form class="form-inline">
+      <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+      <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+      <a class="navbar-brand" href="{{ url_for('logout') }}" style="color:#262D64 ;">Logout</a>
+    </form>
+</nav>
+  <div class="post">
+    <center>
+      <h3>Blogs</h3>
+    </center>
+    <div class="post1">
+
+      <h4>Name:- <a href="https://natashatracy.com/topic/bipolar-blog/"> Bipolar Burble Blog</a>
+
+      <br>
+      <br>
+
+      <p>
+    Post:-
+  Natasha Tracy, Burble’s blogger, is an award-winning writer, speaker, and social media strategist who aims to provide accurate, intelligent, and trustworthy information regarding the bipolar disease. The mental health awareness blog began in 2003 as a personal chronicle of her bipolar disorder struggles. And still, expanding and climbing within the mental health community, gaining thousands of views each day.
+      </p>
+
+      </h4>
+    </div>
+    </div>
+    <div class="post">
+    <div class="post2">
+      <h4>Name - <a href="https://throughthedarkness.health.blog/">Through The Darkness Blog</a>
+
+      <br>
+
+      <br>
+    <p>
+      Post:-
+The Through the Darkness Blog is a personal narrative of one person’s struggle to overcome adversity. Readers can check out recent posts on the mental health awareness blog or subscribe to a newsletter to receive new information directly in their inboxes.
+
+
+    </p>
+
+
+
+      </h4>
+    </div>
+    <div class="post3">
+      <h4>Name-  <a href="https://anxietysisters.com/blog/">The Anxiety Sisters</a>
+
+      <br>
+      <br>
+
+      <p>
+        Post :-
+
+Nearly thirty years ago, the Anxiety Sisters met in college. Their daily chats supported them through multiple panic episodes and phobias as they learned to comprehend and live with their fear over the next few decades. The Anxiety Sisters provide a mental health awareness blog and an e-course to assist folks trying to understand their anxiety.
+      </p>
+
+      </h4>
+    </div>
+
+  </div>
+
+</body>
+</html>
